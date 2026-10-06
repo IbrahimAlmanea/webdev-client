@@ -3,6 +3,7 @@ import ParagraphTag from "./ParagraphTag";
 import ListTags from "./ListTags";
 import Tables from "./Tables";
 import Images from "./Images";
+import Forms from "./forms/Forms";
 
 
 export default function Lab1() {
@@ -15,6 +16,7 @@ export default function Lab1() {
       <ListTags />
       <Tables />
       <Images />
+      <Forms />
     </div>
   );
 }
