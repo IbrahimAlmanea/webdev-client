@@ -133,17 +133,6 @@ export default function YourForm() {
           Cancel
         </button>
       </form>
-
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
     </div>
   );
 }
