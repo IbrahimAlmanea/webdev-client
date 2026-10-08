@@ -9,14 +9,6 @@ export default function CourseStatus() {
       <button>View Course Stream</button> <br /> <br />
       <button>New Announcement</button> <br /> <br />
       <button>New Analytics</button> <br /> <br />
-      {/* 
-        Import Existing Content
-        Import from Commons
-        Choose Home Page
-        View Course Stream
-        New Announcement
-        New Analytics 
-      */}
       <button>View Course Notifications</button>
     </div>
   );
