@@ -1,8 +1,21 @@
-export default async function Home({params,}: {params: Promise <{cid: String}>;}) {
-     const { cid } = await params;
-    return (
+import Modules from "../modules/page";
+import CourseStatus from "./Status";
+
+export default function Home() {
+  return (
     <div id="wd-home">
-      <h2>Home {cid}</h2>
+      <table>
+        <tbody>
+          <tr>
+            <td valign="top" width="70%">
+              <Modules />
+            </td>
+            <td valign="top">
+              <CourseStatus />
+            </td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   );
 }
