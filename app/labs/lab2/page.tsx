@@ -11,7 +11,7 @@ export default function Lab2() {
       <p id="wd-ai-style-attr" style={{ backgroundColor: "purple", color: "white" }}>
         This paragraph has a purple background and white text.
       </p>
-      <p style={{backgroundColor: "green", color: "yellow"}}>This is my paragraph</p>
+      <p style={{backgroundColor: "green", color: "yellow"}}>This is my paragraph a2</p>
     </div>
   );
 }
