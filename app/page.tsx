@@ -1,6 +1,7 @@
-import Labs from "./labs/page"; 
-export default function home(){
+import { redirect } from "next/navigation";
+
+export default function Home(){
   return (
-    <Labs />
+    redirect("/labs")
   );
   }

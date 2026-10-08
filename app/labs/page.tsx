@@ -1,9 +1,8 @@
 import Link from "next/link";
 
-export default function Labs() {
-  return (
-    <div id="wd-labs">
-      <h1>Ibrahim Almania</h1>
+export default function Labs(){
+    return(
+        <div id="wd-labs">
       <h1>Labs</h1>
       <ul>
         <li>
@@ -16,12 +15,12 @@ export default function Labs() {
           <Link href="/labs/lab3">Lab 3: JavaScript Fundamentals</Link>
         </li>
         <li>
-          <Link href="/labs/lab4">Lab 4: placeholder</Link>
+          <Link id="wd-lab4-link" href="/labs/lab4">Lab 4: placeholder</Link>
         </li>
         <li>
           <Link href="/labs/lab5">Lab 5</Link>
         </li>
       </ul>
     </div>
-  );
+    )
 }
