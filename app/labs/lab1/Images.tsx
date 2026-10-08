@@ -15,7 +15,7 @@ export default function Images() {
       <br />
       <img
         id="wd-teslabot"
-        src="/Images/teslabot.jpg"
+        src="/images/teslabot.jpg"
         height="200px"
         alt="Tesla Bot (Optimus) humanoid robot"
       />

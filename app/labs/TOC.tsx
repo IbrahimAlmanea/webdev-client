@@ -7,7 +7,7 @@ export default function TOC(){
           <h3 style={{textAlign: "center"}}>أذكر الله يذكرك</h3>
       <ul>
         <li>
-            <Link href="./labs">Home</Link>
+            <Link href="/labs">Home</Link>
         </li>
         <li>
           <Link href="/labs/lab1">Lab 1</Link>
