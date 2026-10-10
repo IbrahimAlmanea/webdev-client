@@ -102,7 +102,7 @@ export default function Lab2() {
             </div>
             </div>
         </div>
-        <div id="colors, box, corners, dimentions and display">
+        <div id="others">
             <ForegroundColors/>
             <BackgroundColors/>
             <Borders/>
@@ -120,6 +120,10 @@ export default function Lab2() {
             <br /><br /><br />
             <MediaQueriesDemo/>
             <ReactIconsSampler/>
+        </div>
+        <div>
+            <h1>Tailwind</h1>
+            <a href="/labs/lab2/tailwind">Open Tailwind CSS lab →</a>
         </div>
     </div>
   );
