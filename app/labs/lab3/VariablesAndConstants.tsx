@@ -12,8 +12,7 @@ export default function VariablesAndConstants() {
       blockScoped = {blockScoped}       <br />
       constant1 = {constant1} <br />
       sampleSum = {sampleSum}
-      <hr />
-      <br />
+      <br /> <br /><br />
       {greate}
       <hr />
     </div>
