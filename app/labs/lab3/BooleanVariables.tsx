@@ -25,7 +25,7 @@ export default function BooleanVariables() {
       true6 = {true6 + ""}
       <br /><br /><br />
       my comparison = {(234.345 === floatingPointNumber) + ''}  <br />
-      comparing "123" with 123 using = = : {(123 == '123') + ''}
+      comparing "123" with 123 using = = : it was a build error so i removed it.
       <hr />
     </div>
   );
