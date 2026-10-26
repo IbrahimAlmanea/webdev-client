@@ -10,8 +10,26 @@ import LegacyFunctions from "./LegacyFunctions"
 import ArrowFunctions from "./ArrowFunctions"
 import ImpliedReturn from "./ImpliedReturn"
 import TemplateLiterals from "./TemplateLiterals"
+import SimpleArrays from "./SimpleArrays"
+import ArrayIndexAndLength from "./ArrayIndexAndLength"
+import AddingAndRemovingToFromArrays from "./AddingAndRemovingToFromArrays."
+import ForLoops from "./ForLoops"
+import MapFunction from "./MapFunction"
+import FindFunction from "./FindFunction"
+import FindIndex from "./FindIndex"
+import FilterFunction from "./FilterFunction"
+import IncludesSomeEvery from "./IncludesSomeEvery"
+import ReduceFunction from "./ReduceFunction"
+import JsonStringify from "./JsonStringify";
+import House from "./House"
+import Spreading from "./Spreader"
+import Destructing from "./Destructing"
+import FunctionDestructing from "./FunctionDestructing"
+import DestructingImports from "./DestructingImports"
 
 export default function(){
+    console.log("Hello World!");
+
     return(
         <div id="wd-lab3">
             <h1>Lab3</h1>
@@ -27,6 +45,22 @@ export default function(){
             <ArrowFunctions/>
             <ImpliedReturn/>
             <TemplateLiterals/>
+            <SimpleArrays/>
+            <ArrayIndexAndLength/>
+            <AddingAndRemovingToFromArrays/>
+            <ForLoops/>
+            <MapFunction/>
+            <FindFunction/>
+            <FindIndex/>
+            <FilterFunction/>
+            <IncludesSomeEvery/>
+            <ReduceFunction/>
+            <JsonStringify/>
+            <House/>
+            <Spreading/>
+            <Destructing/>
+            <FunctionDestructing/>
+            <DestructingImports/>
         </div>
     )
 }
