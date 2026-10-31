@@ -26,6 +26,11 @@ import Spreading from "./Spreader"
 import Destructing from "./Destructing"
 import FunctionDestructing from "./FunctionDestructing"
 import DestructingImports from "./DestructingImports"
+import OptionalChaining from "./OptionalChaining"
+import Classes from "./Classes"
+import Styles from "./Styles"
+import ClientComponentDemo from "./ClientComponentDemo"
+import ServerComponentDemo from "./ServerComponentDemo"
 
 export default function(){
     console.log("Hello World!");
@@ -61,6 +66,11 @@ export default function(){
             <Destructing/>
             <FunctionDestructing/>
             <DestructingImports/>
+            <OptionalChaining/>
+            <Classes/>
+            <Styles/>
+            <ClientComponentDemo/>
+            <ServerComponentDemo/>
         </div>
     )
 }
