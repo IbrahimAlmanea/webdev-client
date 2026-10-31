@@ -1,6 +1,6 @@
 import fs from "node:fs";
 import path from "node:path";
-
+import ClientRenderTime from "./clientRenderTime";
 export default function ServerComponentDemo() {
   const platform = process.platform;
   const nodeVersion = process.version;
@@ -15,6 +15,9 @@ export default function ServerComponentDemo() {
   }
   return (
     <div id="wd-server-component-demo">
+      <div>
+      <ClientRenderTime/>
+      </div>
       <h1>Server Component Demo</h1>
       <h2>Server Render Time</h2>
       <p>Rendered on server at: {serverRenderTime}</p>
