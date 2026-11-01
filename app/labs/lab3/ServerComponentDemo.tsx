@@ -1,10 +1,11 @@
 import fs from "node:fs";
+import { arch } from "node:os";
 import path from "node:path";
-import ClientRenderTime from "./clientRenderTime";
 export default function ServerComponentDemo() {
   const platform = process.platform;
   const nodeVersion = process.version;
   const serverRenderTime = new Date().toLocaleTimeString();
+  const arch = process.arch;
   const lab3Dir = path.join(process.cwd(), "app/labs/lab3");
   let files: string[] = [];
   try {
@@ -15,15 +16,12 @@ export default function ServerComponentDemo() {
   }
   return (
     <div id="wd-server-component-demo">
-      <div>
-      <ClientRenderTime/>
-      </div>
       <h1>Server Component Demo</h1>
       <h2>Server Render Time</h2>
       <p>Rendered on server at: {serverRenderTime}</p>
       <h2>Server Information</h2>
       <pre>
-        {JSON.stringify({ platform, nodeVersion, serverRenderTime }, null, 2)}
+        {JSON.stringify({ platform, pid: process.pid, nodeVersion, serverRenderTime, arch }, null, 2)}
       </pre>
       <h2>Filesystem Access Demo</h2>
       <pre>{JSON.stringify(files, null, 2)}</pre>

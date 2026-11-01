@@ -13,8 +13,9 @@ export default function Forms() {
         <Textarea/>
         <RadioButtons/>
         <Dropdowns/>
-        <YourFoorm/>
       </form>
+      <YourFoorm />
+
     </div>
   );
 }
