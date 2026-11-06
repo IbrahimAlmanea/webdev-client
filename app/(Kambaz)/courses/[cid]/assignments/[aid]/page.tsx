@@ -1,37 +1,83 @@
 import Link from "next/link";
-
-export default function AssignmentEditor() {
+import * as db from "../../../../database";
+export default async function AssignmentEditor({
+  params,
+}: {
+  params: Promise<{ cid: string; aid: string }>;
+}) {
+  const { cid, aid } = await params;
+  const assignment = db.assignments.find((a) => a._id === aid);
   return (
     <div id="wd-assignments-editor">
       <div className="grid grid-cols-1">
-      <label htmlFor="wd-name" className="mb-4">Assignment Name</label>
-      <input id="wd-name" defaultValue="A1 - ENV + HTML" className="assignment-editor-inputs mb-4" />
-      <textarea id="wd-description" className=" border border-gray-300 rounded-md h-30 mb-4">
-        The assignment is available online Submit a link to the landing page of
-        your Web application running on Vercel.
-      </textarea>
+        <label htmlFor="wd-name" className="mb-4">Assignment Name</label>
+        <input 
+          id="wd-name" 
+          defaultValue={assignment?.title ?? ""} 
+          className="assignment-editor-inputs mb-4" 
+        />
+        <p className="mb-4 text-red-500">Assignment id: {aid}</p>
+        <textarea 
+          id="wd-description" 
+          className=" border border-gray-300 rounded-md h-30 mb-4 w-full"
+          defaultValue={assignment?.description ?? ""}
+          rows={8}
+        >
+        </textarea>
       </div>
 
       <div className="grid grid-cols-3 gap-4">
-        <label htmlFor="wd-points" className="text-right">Points</label>
+        <label 
+          htmlFor="wd-points" 
+          className="text-right"
+        >
+          Points
+        </label>
 
-        <input id="wd-points" defaultValue={100} className="assignment-editor-inputs col-span-2"/>
+        <input 
+          id="wd-points" 
+          defaultValue={assignment?.points ?? 100} 
+          className="assignment-editor-inputs col-span-2"
+        />
 
-        <label htmlFor="wd-group" className="text-right">Assignment Group</label>
-        <select id="wd-group" className="assignment-editor-inputs  col-span-2">
-            <option>ASSIGNMENTS</option>
-            <option>QUIZZES</option>
-            <option>EXAMS</option>
-            <option>PROJECT</option>
+        <label 
+          htmlFor="wd-group" 
+          className="text-right"
+        >
+          Assignment Group
+        </label>
+
+        <select 
+          id="wd-group" 
+          className="assignment-editor-inputs  col-span-2"
+        >
+          <option>ASSIGNMENTS</option>
+          <option>QUIZZES</option>
+          <option>EXAMS</option>
+          <option>PROJECT</option>
         </select>
 
-        <label htmlFor="wd-display-grade-as" className="text-right">Display Grade as</label>
-        <select id="Display Grade as" className="assignment-editor-inputs col-span-2" >
-            <option>Percentage</option>
-            <option>Points</option>
+        <label 
+          htmlFor="wd-display-grade-as" 
+          className="text-right"
+        >
+          Display Grade as
+        </label>
+
+        <select 
+          id="Display Grade as" 
+          className="assignment-editor-inputs col-span-2" 
+        >
+          <option>Percentage</option>
+          <option>Points</option>
         </select>
 
-        <label htmlFor="wd-submission-type" className="text-right ">Submission Type</label>
+        <label 
+          htmlFor="wd-submission-type" 
+          className="text-right "
+        >
+          Submission Type
+        </label>
 
         <div className="flex flex-col p-4 border border-gray-300 rounded-lg col-span-2">
           <select id="wd-submission-type" className="assignment-editor-inputs">
@@ -71,14 +117,38 @@ export default function AssignmentEditor() {
         <div className="flex flex-col text-xl font-bold border border-gray-300 rounded-lg p-4 col-span-2">
           <label htmlFor="wd-assign-to">Assign to</label>
           <input id="wd-assign-to" type="text" className="assignment-editor-inputs mb-4"/>
-          <label htmlFor="wd-due-date">Due</label>
-          <input id="wd-due-date" type="date" className="assignment-editor-inputs mb-4" />
+          
+          <label 
+            htmlFor="wd-due-date"
+          >
+            Due
+          </label>
+
+          <input 
+            id="wd-due-date" 
+            type="date" 
+            className="assignment-editor-inputs mb-4"
+            defaultValue={assignment?.due}
+          />
 
           <div className="grid grid-cols-2 gap-2">
             <label htmlFor="wd-available-from">Available from</label>
             <label htmlFor="wd-available-until">Until</label>
-            <input id="wd-available-from" type="date" className="assignment-editor-inputs" />
-            <input id="wd-available-until" type="date" className="assignment-editor-inputs"/>  
+
+            <input 
+              id="wd-available-from" 
+              type="date" 
+              className="assignment-editor-inputs" 
+              defaultValue={assignment?.available}
+            />
+
+            <input 
+              id="wd-available-until" 
+              type="date" 
+              className="assignment-editor-inputs"
+              defaultValue={assignment?.due ?? undefined}
+
+            />  
           </div>              
         </div>
       </div>
@@ -92,8 +162,24 @@ export default function AssignmentEditor() {
         />
       </div>
       <div className="border-t border-gray-300 text-right h-15 py-6 px-4 mt-10">
-        <Link href="/courses/1234/assignments" id="wd-cancel" className="border border-gray-300 bg-gray-100 text-black rounded-lg no-underline px-6 py-3 m-2">Cancel</Link>{" "}
-        <Link href="/courses/1234/assignments" id="wd-save" className="bg-red-700 text-white rounded-lg no-underline px-6 py-3">Save</Link>
+        <Link 
+          href={`/courses/${cid}/assignments`}
+          id="wd-cancel" 
+          className="border border-gray-300 bg-gray-100 text-black rounded-lg no-underline px-6 py-3 m-2"
+        >
+          Cancel
+        </Link>
+        
+        {" "}
+        
+        <Link 
+          href={`/courses/${cid}/assignments`}
+          id="wd-save" 
+          className="bg-red-700 text-white rounded-lg no-underline px-6 py-3"
+        >
+          Save
+        </Link>
+
       </div>
     </div>
   );
