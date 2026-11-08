@@ -24,11 +24,11 @@ const activeStyle = {
 export default function TOC() {
   const pathname = usePathname() ?? "";
   return (
-    <ul>
+    <ul className="ml-4 mt-4">
       {LINKS.map((link) => {
         const active = link.match(pathname);
         return (
-          <li key={link.id}>
+          <li key={link.id} className="text-lg mb-2">
             <Link
               href={link.href}
               id={link.id}

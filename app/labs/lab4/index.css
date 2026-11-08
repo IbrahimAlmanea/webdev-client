@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+h2 {
+  font-size: xx-large;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+hr {
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+button {
+  margin-right: 4px;
+}
+
+input {
+  margin-right: 4px;
+}
+
+p {
+  font-size: large;
+  margin-bottom: 10px;
+}
