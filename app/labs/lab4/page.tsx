@@ -1,4 +1,5 @@
 "use client"
+import Link from "next/link"
 import "./index.css"
 import ClickEvent from "./ClickEvent"
 import PassingDataOnEvent from "./PassingDataOnEvent"
@@ -54,6 +55,18 @@ export default function(){
             <ProfileForm/>
             <ParentStateComponent/>
             <PropDrilling/>
+            <div>
+                <h2>Query parameters</h2>
+                <a className="text-blue-600 underline hover:text-blue-800" href="/labs/lab4/url-encoding/query-params?a=12&b=30">Query parameters: 12 + 30</a>
+                <br /><br />
+                <a className="text-blue-600 underline hover:text-blue-800" href="/labs/lab4/url-encoding/query-params?a=7&b=8">Query parameters: 7 + 8</a>
+                <br /><br /><br /><br />
+                <h2>Path parameters</h2>
+                <a className="text-blue-600 underline hover:text-blue-800" href="/labs/lab4/url-encoding/path-params/12/30">Path parameters: 12 + 30 </a>
+                <br /><br />
+                <a className="text-blue-600 underline hover:text-blue-800" href="/labs/lab4/url-encoding/path-params/7/8">Path parameters: 7 + 8</a>
+                <br /><br /><br /><br />
+            </div>
             <UrlEncoding/>
             <ContextExamples/>
             <ReactContextTodoList/>
