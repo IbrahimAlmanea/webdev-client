@@ -7,7 +7,6 @@
     "endDate": "2023-05-15",
     "department": "D123",
     "credits": 4,
-    "term": "Spring 2023",
     "description": "This course provides an in-depth study of the fundamentals of rocket propulsion, including thermodynamics of the combustion chamber and nozzle. Students analyze solid, liquid, and hybrid rocket motors and apply propulsion theory to engine performance.",
     "image": "/images/reactjs.webp"
   },
@@ -19,7 +18,6 @@
     "endDate": "2023-05-15",
     "department": "D123",
     "credits": 3,
-    "term": "Spring 2023",
     "description": "This course explores the principles of aerodynamics and how airflow interacts with wings, airfoils, and other flying bodies. Students study lift, drag, compressible flow, and the aerodynamic considerations used in aircraft and spacecraft design.",
     "image": "/images/nodejs.webp"
   },
@@ -31,7 +29,6 @@
     "endDate": "2023-05-15",
     "department": "D123",
     "credits": 4,
-    "term": "Spring 2023",
     "description": "This course covers the principles of spacecraft design, including structures, propulsion, thermal control, and power systems. Students apply systems engineering methods to mission design, orbital mechanics, and payload integration for current and future space missions.",
     "image": "/images/mongodb.webp"
   },
@@ -43,7 +40,6 @@
     "endDate": "2023-05-15",
     "department": "D123",
     "credits": 4,
-    "term": "Spring 2023",
     "description": "this course is my course. I created this course as per the On Your Own instructions. I hope this is to your satesfaction. Sorry about the sbelling but i couldn't be bothered. :)",
     "image": "/images/Badayea.jpg"
   },
@@ -55,7 +51,6 @@
     "endDate": "2023-05-15",
     "department": "D123",
     "credits": 4,
-    "term": "Spring 2023",
     "description": "An introduction to organic molecules, reactions, and their applications.",
     "image": "/images/teslabot.jpg"
   }
