@@ -17,7 +17,7 @@ export default function Labs(){
           <Link href="/labs/lab3">Lab 3: JavaScript Fundamentals</Link>
         </li>
         <li>
-          <Link id="wd-lab4-link" href="/labs/lab4">Lab 4: placeholder</Link>
+          <Link id="wd-lab4-link" href="/labs/lab4">Lab 4</Link>
         </li>
         <li>
           <Link href="/labs/lab5">Lab 5</Link>
@@ -29,12 +29,30 @@ export default function Labs(){
         </li>
         <li>
           <a
-            href="https://github.com/IbrahimAlmanea/webdev-client"
+            href="https://github.com/IbrahimAlmanea/webdev-client.git"
             id="wd-github"
             target="_blank"
             rel="noreferrer"
           >
-            GitHub repository
+            webdev-client GitHub repository
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://github.com/IbrahimAlmanea/webdev-server.git"
+            target="_blank"
+            rel="noreferrer"
+          >
+            webdev-server GitHub repository
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://webdev-server-g62s.onrender.com"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Root URL of my deployed server
           </a>
         </li>
       </ul>
