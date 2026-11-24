@@ -27,7 +27,7 @@ export default function Signin() {
 
   return (
     <div id="wd-signin-screen">
-      <h3>Sign in</h3>
+      <h3 className="mb-3 text-2xl font-semibold">Sign in</h3>
       <input
         placeholder="username"
         id="wd-username"
@@ -35,6 +35,7 @@ export default function Signin() {
         onChange={(e) =>
           setCredentials({ ...credentials, username: e.target.value })
         }
+        className="mb-2 w-full rounded border border-neutral-300 px-3 py-2"
       />
       <input
         placeholder="password"
@@ -44,11 +45,21 @@ export default function Signin() {
         onChange={(e) =>
           setCredentials({ ...credentials, password: e.target.value })
         }
+        className="mb-2 w-full rounded border border-neutral-300 px-3 py-2"
       />
-      <button type="button" onClick={signin} id="wd-signin-btn">
+      <button 
+        type="button" 
+        onClick={signin} 
+        id="wd-signin-btn"
+        className="mb-2 block w-full rounded-md bg-blue-700 px-3 py-2 text-center text-white no-underline"
+      >
         Sign in
       </button>
-      <Link href="/account/signup" id="wd-signup-link">
+      <Link 
+        href="/account/signup" 
+        id="wd-signup-link"
+        className="mb-2 block w-full rounded-md bg-blue-700 px-3 py-2 text-center text-white no-underline"
+      >
         Sign up
       </Link>
     </div>

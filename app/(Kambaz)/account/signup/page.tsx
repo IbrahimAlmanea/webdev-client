@@ -31,12 +31,13 @@ export default function Signup() {
 
   return (
     <div id="wd-signup-screen">
-      <h3>Sign up</h3>
+      <h3 className="mb-3 text-2xl font-semibold">Sign up</h3>
       <input
         id="wd-username"
         placeholder="username"
         value={username}
         onChange={(e) => setUsername(e.target.value)}
+        className="mb-2 w-full rounded border border-neutral-300 px-3 py-2"
       />
       <input
         id="wd-password"
@@ -44,11 +45,21 @@ export default function Signup() {
         type="password"
         value={password}
         onChange={(e) => setPassword(e.target.value)}
+        className="mb-2 w-full rounded border border-neutral-300 px-3 py-2"
       />
-      <button type="button" onClick={signup} id="wd-signup-btn">
+      <button 
+        type="button" 
+        onClick={signup} 
+        id="wd-signup-btn"
+        className="mb-2 block w-full rounded-md bg-blue-700 px-3 py-2 text-center text-white no-underline"
+      >
         Sign up
-      </button>{" "}
-      <Link href="/account/signin" id="wd-signin-link">
+      </button>
+      <Link 
+        href="/account/signin" 
+        id="wd-signin-link"
+        className="mb-2 block w-full rounded-md bg-blue-700 px-3 py-2 text-center text-white no-underline"
+      >
         Sign in
       </Link>
     </div>

@@ -50,7 +50,7 @@ export default function KambazNavigation() {
       >
         <FaRegCircleUser
           className={`inline-block text-3xl ${
-            accountActive ? "text-red-600" : "text-white"
+            accountActive ? "text-red-600" : "text-red-600"
           }`}
         /> <br />
         Account

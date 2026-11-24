@@ -1,6 +1,7 @@
 import { AccountProvider } from "./account/AccountContext";
 import KambazNavigation from "./Navigation";
 import type { ReactNode } from "react";
+import "./kambaz.css"
 
 export default function KambazLayout({
   children,

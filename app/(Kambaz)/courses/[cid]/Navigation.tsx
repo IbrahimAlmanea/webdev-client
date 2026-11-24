@@ -2,7 +2,6 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import "../../kambaz.css";
 
 const LINKS = [
   { segment: "home", id: "wd-course-home-link", label: "Home" },
